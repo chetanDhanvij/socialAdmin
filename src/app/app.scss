@@ -1,0 +1,96 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+[background-gradient]{
+    // background: linear-gradient(to bottom left,  #F4B350 ,#F9690E 60vh );
+    background: url(../assets/imgs/background.jpg);
+    background-size: cover;  
+}
+
+[background-transparent]{
+    background:transparent; 
+    ion-label{
+        color: white !important;
+    } 
+}
+
+.err-msg {
+    text-align: center;
+    color: color($colors,danger);
+    padding: 0px;
+    margin: 0px;
+    white-space: normal;
+    span {
+        text-align: left !important;
+        background: white;
+    }
+}
+
+
+
+[button-center]{
+    width: 70vw;
+    margin: auto !important;
+    margin-top: 25px !important;
+}
+
+[logo-center]{
+    max-width: 25vw;
+    border: 0;
+    margin: auto;
+    display: block;
+    margin-top: 19px;
+}
+
+.select-icon-inner{
+    color: white !important;
+}
+
+.text-white{
+    color: white;
+}
+
+ion-label{
+    color: black !important;
+}
+
+img{
+    object-fit: cover !important;   
+}
+
+.text-padding-left{
+    padding-left: 5px;
+}
+.post-username{
+    .username{
+        font-size: 20px !important;
+        color: color($colors, secondary) !important;
+        white-space: normal;
+    }
+    span{
+        font-size: 15px ;
+        color: gray;
+    }
+}
+
+.infinite-loading {
+    display: block !important;
+    /* width: 100%; */
+     margin: 0 !important;
+}
+// @mixin test($v)
+

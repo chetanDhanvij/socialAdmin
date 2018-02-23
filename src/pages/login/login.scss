@@ -1,0 +1,32 @@
+page-login {
+    form {
+      margin-bottom: 32px;
+      button {
+        margin-top: 20px !important;
+      }
+    }
+  
+    p {
+      font-size: 0.8em;
+      color: white;
+    }
+  
+    ion-label {
+      margin-left: 5px;
+      color: white !important;
+    }
+  
+    ion-input {
+      padding: 5px;
+      color: white;
+    }
+  
+    .invalid {
+      border-bottom: 1px solid #ff6153;
+    }
+
+    [ion-button]{
+      color: white;
+    }
+  }
+  
