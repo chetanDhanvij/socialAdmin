@@ -16,6 +16,7 @@ import { UserDataProvider } from '../providers/user-data/user-data';
 import { ImageSelectorProvider } from '../providers/image-selector/image-selector';
 import { AdvertisementProvider } from '../providers/advertisement/advertisement';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { SettingsProvider } from '../providers/settings/settings';
 
 
 
@@ -46,7 +47,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     UserDataProvider,
     ImageSelectorProvider,
     AdvertisementProvider,
-    InAppBrowser
+    InAppBrowser,
+    SettingsProvider
   ]
 })
 export class AppModule {}

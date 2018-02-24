@@ -1,0 +1,42 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Settings</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="refresh()">
+        Refresh
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label>Min Version</ion-label>
+    <ion-input type="text"  [(ngModel)]="minVer"></ion-input>
+    <button ion-button clear item-end (click)="updateMinVer()">Update</button>
+  </ion-item>
+  <ion-item>
+    <ion-label>Current Version</ion-label>
+    <ion-input type="text" [(ngModel)]="currVer"></ion-input>
+    <button ion-button clear item-end (click)="updateCurrVer()">Update</button>
+  </ion-item>
+  <ion-item>
+    <ion-label>Recalled</ion-label>
+    <ion-toggle [(ngModel)]="isRecalled"></ion-toggle>
+    <button ion-button clear item-end (click)="updateRecallState()">Update</button>
+  </ion-item>
+  <ion-item *ngIf="isRecalled">
+    <ion-label floating>Recall Message</ion-label>
+    <ion-input type="text"  [(ngModel)]="recallMsg"></ion-input>
+    <button ion-button clear item-end (click)="updateRecallMsg()">Update</button>
+  </ion-item>
+</ion-content>

@@ -68,12 +68,17 @@ export class UserDetailPage {
 
   gotoAdvertise(){
     console.log(this.userID, this.user.key, this.userID == this.user.key)
-    if(this.userID == this.user.key){
+
       this.navCtrl.push("AdvertisementPage");
+  }
+
+  gotoSettings(){
+    console.log(this.userID, this.user.key, this.userID == this.user.key)
+    if(this.userID == this.user.key){
+      this.navCtrl.push("SettingsPage");
     }else{
       alert("Not allowed");
     }
-
   }
 
 }
