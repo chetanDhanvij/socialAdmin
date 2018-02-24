@@ -61,7 +61,7 @@ export class LoginPage {
         authData => {
           console.log(authData);
           this.loading.dismiss().then(() => {
-            this.navCtrl.setRoot('TabsPage');
+            this.navCtrl.setRoot('UserDetailPage');
           });
         },
         error => {
